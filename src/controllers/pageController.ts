@@ -12,11 +12,26 @@ export const home = (req: Request, res: Response) => {
 
 };
 export const cats = (req: Request, res: Response) => {
-    res.render('cats');
+        res.render('pages/page', {
+        banner: {
+            title: 'Gatos',
+            background: 'banner_cat.jpg'
+        }
+    })
 };
 export const dogs = (req: Request, res: Response) => {
-    res.render('dogs');
+        res.render('pages/page', {
+        banner: {
+            title: 'Cachorros',
+            background: 'banner_dog.jpg'
+        }
+    })
 };
 export const fishes = (req: Request, res: Response) => {
-    res.render('fishes');
+        res.render('pages/page', {
+        banner: {
+            title: 'Peixes',
+            background: 'banner_fish.jpg'
+        }
+    })
 };

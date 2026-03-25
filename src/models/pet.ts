@@ -143,7 +143,7 @@ const data: Pet[] = [
 export const Pet = {
   getAll: (): Pet[] => {
     return data;
-  }
+  },
 
   getFromType: (type: PetType): Pet[] => {
     // return data.filter(item => {
